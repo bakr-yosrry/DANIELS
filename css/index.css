@@ -1,0 +1,750 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+/*//////////////////////////// sec(vav) //////////////////////////*/
+
+body {
+  position: relative; 
+}
+.navbar .nav-link,.navbar-brand{
+    color: black;
+}
+
+.navbar .nav-link {
+  position: relative;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+/*//////////////////////////// sec(1) //////////////////////////*/
+
+.sec-1 {
+    background: linear-gradient(rgba(0, 0, 0, .7)), url(../imgs/bg.jpg) no-repeat center/cover;
+}
+
+.sec-1 p::after {
+    content: "|";
+    animation: sec-1-move 10s steps(1) infinite;
+}
+
+@keyframes sec-1-move {
+    0% {
+        content: "|";
+    }
+
+    2% {
+        content: "L|";
+    }
+
+    4% {
+        content: "La|";
+    }
+
+    6% {
+        content: "Lar|";
+    }
+
+    8% {
+        content: "Larr|";
+    }
+
+    10% {
+        content: "Larry|";
+    }
+
+    12% {
+        content: "Larry |";
+    }
+
+    14% {
+        content: "Larry D|";
+    }
+
+    16% {
+        content: "Larry Da|";
+    }
+
+    18% {
+        content: "Larry Dan|";
+    }
+
+    20% {
+        content: "Larry Dani|";
+    }
+
+    22% {
+        content: "Larry Danie|";
+    }
+
+    24% {
+        content: "Larry Daniel|";
+    }
+
+    26% {
+        content: "Larry Daniels|";
+    }
+
+    30% {
+        content: "Larry Daniels|";
+    }
+
+    32% {
+        content: "Larry Daniel|";
+    }
+
+    34% {
+        content: "Larry Danie|";
+    }
+
+    36% {
+        content: "Larry Dani|";
+    }
+
+    38% {
+        content: "Larry Dan|";
+    }
+
+    40% {
+        content: "Larry Da|";
+    }
+
+    42% {
+        content: "Larry D|";
+    }
+
+    44% {
+        content: "Larry |";
+    }
+
+    46% {
+        content: "Larry|";
+    }
+
+    48% {
+        content: "Larr|";
+    }
+
+    50% {
+        content: "Lar|";
+    }
+
+    52% {
+        content: "La|";
+    }
+
+    54% {
+        content: "L|";
+    }
+
+    55% {
+        content: "|";
+    }
+
+    56% {
+        content: "D|";
+    }
+
+    58% {
+        content: "De|";
+    }
+
+    60% {
+        content: "Dev|";
+    }
+
+    62% {
+        content: "Deve|";
+    }
+
+    64% {
+        content: "Devel|";
+    }
+
+    66% {
+        content: "Develo|";
+    }
+
+    68% {
+        content: "Develop|";
+    }
+
+    70% {
+        content: "Develope|";
+    }
+
+    72% {
+        content: "Developer|";
+    }
+
+    76% {
+        content: "Developer|";
+    }
+
+    78% {
+        content: "Develope|";
+    }
+
+    80% {
+        content: "Develop|";
+    }
+
+    82% {
+        content: "Develo|";
+    }
+
+    84% {
+        content: "Devel|";
+    }
+
+    86% {
+        content: "Deve|";
+    }
+
+    88% {
+        content: "Dev|";
+    }
+
+    90% {
+        content: "De|";
+    }
+
+    92% {
+        content: "D|";
+    }
+
+    93% {
+        content: "|";
+    }
+
+    94% {
+        content: "D|";
+    }
+
+    95% {
+        content: "De|";
+    }
+
+    96% {
+        content: "Des|";
+    }
+
+    97% {
+        content: "Desi|";
+    }
+
+    98% {
+        content: "Desig|";
+    }
+
+    99% {
+        content: "Design|";
+    }
+
+    100% {
+        content: "Designe|";
+    }
+
+    101% {
+        content: "Designer|";
+    }
+
+    105% {
+        content: "Designer|";
+    }
+
+    106% {
+        content: "Designe|";
+    }
+
+    107% {
+        content: "Design|";
+    }
+
+    108% {
+        content: "Desig|";
+    }
+
+    109% {
+        content: "Desi|";
+    }
+
+    110% {
+        content: "Des|";
+    }
+
+    111% {
+        content: "De|";
+    }
+
+    112% {
+        content: "D|";
+    }
+
+    113% {
+        content: "|";
+    }
+}
+
+.sec-1 .circle-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .2);
+}
+
+/*//////////////////////////// sec(2) //////////////////////////*/
+
+.sec-2-back::after {
+    content: "";
+    width: 75%;
+    height: 305px;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.sec-2-back {
+    padding-left: 15px;
+}
+
+.sec-2-bot1 {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.sec-2-bot1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sec-2-bot2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sec-2-bot2 {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.sec-2-bot1:hover {
+    background-color: white;
+    color: black;
+}
+
+.sec-2-bot2:hover {
+    background-color: black;
+    color: white;
+}
+
+/*//////////////////////////// sec(3) //////////////////////////*/
+
+.sec-3 {
+    background: #f7f7f7;
+}
+
+.py-6 {
+    padding: 100px 0;
+}
+
+.sec-3-circle {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.sec-3-card {
+    padding: 50px 50px;
+    border-radius: 6px;
+}
+
+.sec-3-back h3::after {
+    content: "";
+    width: 170px;
+    height: 10px;
+    left: 45%;
+    top: 147px;
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+
+.sec-3-card {
+    transition: 0.3s;
+}
+
+.sec-3-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.sec-3-circle i {
+    font-size: 30px;
+    color: #343434;
+    transition: 0.3s;
+}
+
+.sec-3-card:hover .sec-3-circle {
+    background: #000;
+}
+
+.sec-3-card:hover .sec-3-circle i {
+    color: white;
+}
+
+.sec-3-i {
+    color: #343434;
+}
+
+/*//////////////////////////// sec(4) //////////////////////////*/
+
+.sec-4-back h3::after {
+    content: "";
+    width: 195px;
+    height: 10px;
+    left: 44%;
+    top: 144px;
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+
+.sec-4-card {
+    position: relative;
+    width: 360px;
+    height: 300px;
+}
+
+.sec-4-card img {
+    height: 100%;
+}
+
+.sec-4-border {
+    position: absolute;
+    width: 350px;
+    height: 290px;
+    background-color: white;
+    display: flex;
+    top: 20px;
+    left: 5px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.sec-4-border h2 {
+    position: absolute;
+    top: 70px;
+    transition: all .6s;
+}
+
+.sec-4-card:hover .sec-4-border {
+    opacity: 1;
+    top: 5px;
+}
+
+.sec-4-card:hover .sec-4-border h2 {
+    top: 100px;
+}
+
+.sec-4-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+    border: solid black 1px;
+    transition: 0.3s;
+}
+
+.sec-4-circle i {
+    color: white;
+    transition: 0.3s;
+}
+
+.sec-4-circle:hover {
+    background-color: white;
+}
+
+.sec-4-circle:hover i {
+    color: black;
+}
+
+#myTab .nav-link {
+    border: none;
+    position: relative;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+#myTab .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+#myTab .nav-link.active::after {
+    width: 100%;
+}
+
+#myTab .nav-link.active {
+    color: black;
+    font-weight: bold;
+}
+
+.tab-pane.fade {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/*//////////////////////////// sec(5) //////////////////////////*/
+
+.sec-5 {
+    background: #f7f7f7;
+}
+
+.sec-5-back h3::after {
+    content: "";
+    width: 280px;
+    height: 10px;
+    left: 41.5%;
+    top: 147px;
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+
+.sec-5-pho {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.py-7 {
+    padding: 100px 0 50px 0;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.testimonial p {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.testimonial h5 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #d6d6d6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #869791;
+}
+
+.carousel-indicators button:hover {
+    background-color: #869791;
+}
+
+/*//////////////////////////// sec(6) //////////////////////////*/
+
+/*//////////////////////////// sec(7) //////////////////////////*/
+
+.sec-7 {
+    background: #f7f7f7;
+}
+
+.sec-7-back h3::after {
+    content: "";
+    width: 210px;
+    height: 10px;
+    left: 43.5%;
+    top: 147px;
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+
+.sec-7-card img {
+    width: 100%;
+    transition: all 1s;
+}
+
+.sec-7-rad {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sec-7-border {
+    height: 27%;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 25%;
+    left: 32.5%;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.sec-7 .circle-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    border: solid 1px black;
+
+}
+
+.sec-7-card:hover .sec-7-border {
+    transform: rotatey(360deg)scale(2.65);
+    opacity: 1;
+}
+
+.sec-7 .circle-icon a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sec-7 .circle-icon i {
+    color: white;
+}
+
+.sec-7 .circle-icon:hover {
+    color: black;
+    background-color: white;
+}
+
+.sec-7 .circle-icon:hover i {
+    color: black;
+}
+
+.sec-7 img:hover {
+    transform: scale(1.1);
+}
+
+.sec-7-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.sec-7-card img {
+    transition: transform 0.4s ease-in-out;
+
+
+}
+
+.sec-7-card img:hover {
+    transform: scale(1.1);
+}
+
+/*//////////////////////////// sec(8) //////////////////////////*/
+
+.sec-8-back h2::after {
+    content: "";
+    width: 210px;
+    height: 10px;
+    left: 43.5%;
+    top: 147px;
+    position: absolute;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+}
+
+.sec-8-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    transition: all .5s;
+}
+
+.sec-8-hover:hover .sec-8-circle {
+    background: black;
+    color: white;
+}
+
+.sec-8-bot {
+    padding: 10px 40px;
+    background: black;
+    color: #eee;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 15px;
+    transition: all .5s;
+}
+
+.sec-8-bot:hover {
+    background: white;
+    color: #000;
+}
+
+/*//////////////////////////// sec(9) //////////////////////////*/
+
+.sec-9{
+    height: 100px;
+    background: #1c1c1c;
+    padding: 30px;
+}
